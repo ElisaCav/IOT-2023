@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SettingsActivity">
+
+    <!-- Titolo Impostazioni -->
+    <TextView
+        android:id="@+id/tvSettings"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:text="@string/tvSettings"
+        android:textSize="14sp" />
+
+    <!-- Switch 1 -->
+
+    <!-- Switch 2 -->
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchEmergencyNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/switchEmergencyNumber"
+        android:textSize="18sp" />
+
+    <!-- Button Aggiungi Contatto -->
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/switchContact"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bttAddContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_contact"
+        android:textSize="18sp"
+        android:layout_marginTop="2dp"/>
+
+    <!-- EditText Nome Contatto -->
+    <EditText
+        android:id="@+id/etAddContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_name"
+        android:autofillHints=""
+        android:inputType="textPersonName"
+        android:layout_marginTop="2dp"
+        android:visibility="invisible"/>
+
+    <!-- EditText Numero Contatto -->
+    <EditText
+        android:id="@+id/etAddContactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Aggiungi numero"
+        android:autofillHints=""
+        android:inputType="number|phone"
+        android:layout_marginTop="2dp"
+        android:visibility="invisible"/>
+
+    <!-- Button Conferma -->
+    <Button
+        android:id="@+id/bttContactSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conferma"
+        android:textSize="18sp"
+        android:layout_marginTop="1dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contatti_salvati"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <!-- RecyclerView per i contatti -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>
