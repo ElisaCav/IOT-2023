@@ -1,6 +1,6 @@
 # IOT23
 
-Progetto universitario
+Progetto universitario sviluppato in collaborazione con [@boris8055](https://github.com/boris8055)
 
 App mobile per rilevamento incidenti stradali
 
